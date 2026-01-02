@@ -26,9 +26,30 @@ flutter:
 
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+
+  assets:
+    - assets/img/watchy_transparent.png
+    - assets/img/banner1.png
+    - assets/img/banner2.png
+    - assets/img/banner3.png
+
+    - assets/svg/cart.svg
+    - assets/svg/arrow_left.svg
+    - assets/svg/canceled.svg
+    - assets/svg/classic_watch.svg
+    - assets/svg/credit_card.svg
+    - assets/svg/delivered.svg
+    - assets/svg/desk_clock.svg
+    - assets/svg/digital_watch.svg
+    - assets/svg/home.svg
+    - assets/svg/location.svg
+    - assets/svg/on_progress.svg
+    - assets/svg/phone.svg
+    - assets/svg/smart_watch.svg
+    - assets/svg/user.svg
+    - assets/svg/user_2.svg
+
+
   # fonts:
   #   - family: Schyler
   #     fonts:

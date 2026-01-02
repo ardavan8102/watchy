@@ -20,7 +20,8 @@ abstract class AppColors {
 
   // Borders
   static const Color textFieldFocusedBorder = Color(0xff0075FB);
-  static const textFieldNormalBorder = Color(0xffD9DCE4);
+  static const Color textFieldNormalBorder = Color(0xffD9DCE4);
+  static const Color indicatorInActiveBorder = Color(0xff707070);
 
 
   // backgrounds
@@ -30,4 +31,5 @@ abstract class AppColors {
   static const Color scaffoldBackground = Color(0xffFBFBFB);
   static const Color textFieldFillBackground = Color(0xffffffff);
   static const Color checkoutButtonBackground = Color(0xffFF6161);
+  static const Color indicatorFilled = Color(0xffC1C1C1);
 }

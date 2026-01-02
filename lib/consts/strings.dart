@@ -1,5 +1,9 @@
 abstract class AppStrings {
 
+  // titles
+  static const String specialOffersSection = "شگفت انگیز";
+
+
   // labels
   static const String enterYourNumber = "شماره خود را وارد کنید";
   static const String enterYourConfirmationCode = "کد فعال سازی را وارد کنید";
@@ -8,11 +12,22 @@ abstract class AppStrings {
   static const String addressLabel = "آدرس";
   static const String postalCode = "کد پستی";
   static const String gpsLocation = "موقعیت مکانی";
+  static const String editProfilePicture = "انتخاب تصویر پروفایل";
+  static const String sendToAddress = "ارسال به آدرس";
+  static const String activeAddress = "آدرس فعال";
+  static const String productComments = "نظرات";
+  static const String productReview = "نقد و بررسی";
+  static const String productProperties = "خصوصیات ";
+
 
   // button texts
   static const String sendConfirmationCode = "ارسال کد فعال سازی";
   static const String continueText = "ادامه";
   static const String signup = "ثبت نام";
+  static const String seeAll = "مشاهده همه";
+  static const String continueToPayment = "ادامه فرآیند خرید";
+  static const String addToCart = "افزودن به سبد خرید";
+  static const String rulesAndPolicies = "قوانین و مقررات";
 
 
   // textfield hints
