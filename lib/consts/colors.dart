@@ -16,6 +16,7 @@ abstract class AppColors {
   static const Color hintNormalText = Color(0xffD9DCE4);
   static const Color hintFocusedText = Color(0xff888D9B);
   static const Color homeSectionTitleText = Color(0xffCF2755);
+  static const Color mainButtonText = Color(0xffffffff);
 
 
   // Borders

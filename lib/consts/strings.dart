@@ -1,5 +1,10 @@
 abstract class AppStrings {
 
+  // primary
+  static const String shopName = 'فروشگاه واچی';
+  static const String shopSubText = 'سرزمین ساعت های لوکس';
+
+
   // titles
   static const String specialOffersSection = "شگفت انگیز";
 
