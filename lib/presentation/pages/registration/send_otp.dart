@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:watchy/components/extentions/sized_box_extention.dart';
-import 'package:watchy/consts/colors.dart';
 import 'package:watchy/consts/dimens.dart';
+import 'package:watchy/consts/strings.dart';
 import 'package:watchy/presentation/widgets/buttons/main_submit_button.dart';
 import 'package:watchy/presentation/widgets/row/logo_with_text.dart';
 import 'package:watchy/presentation/widgets/textfields/textfield_with_label.dart';
@@ -45,7 +45,6 @@ class _SendOtpScreenState extends State<SendOtpScreen> {
         _numberFieldFocus.unfocus();
       },
       child: Scaffold(
-        backgroundColor: AppColors.scaffoldBackground,
         body: SafeArea(
           child: Padding(
             padding: EdgeInsets.all(size.width * .1),
@@ -56,24 +55,26 @@ class _SendOtpScreenState extends State<SendOtpScreen> {
                   // logo
                   LogoWithTextRow(),
             
-                  (Dimens.large * 3).height,
+                  (Dimens.large * 3).heightBox,
       
                   // text field
                   SizedBox(
                     width: size.width,
                     child: TextFieldWithTitleLabel(
                       numberEditingController: _numberEditingController,
-                      numberFieldFocus: _numberFieldFocus
+                      numberFieldFocus: _numberFieldFocus,
+                      label: AppStrings.enterYourNumber,
                     ),
                   ),
             
-                  Dimens.large.height,
+                  Dimens.large.heightBox,
             
                   // button
-                  SizedBox(
-                    width: size.width,
-                    height: 60,
-                    child: MainSubmitButton(function: () {}),
+                  MainSubmitButton(
+                    function: () {
+                  
+                    },
+                    label: AppStrings.sendConfirmationCode,
                   ),
                 ],
               ),

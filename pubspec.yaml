@@ -52,6 +52,7 @@ flutter:
     - assets/svg/smart_watch.svg
     - assets/svg/user.svg
     - assets/svg/user_2.svg
+    
   # fonts:
   #   - family: Schyler
   #     fonts:

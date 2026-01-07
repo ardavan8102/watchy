@@ -1,61 +1,61 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:watchy/components/theme/typography.dart';
 import 'package:watchy/consts/colors.dart';
+import 'package:watchy/consts/dimens.dart';
 
 class AppTheme {
 
   static ThemeData mainTheme = ThemeData(
     
+    // general colors
+    primaryColor: AppColors.primary,
+    scaffoldBackgroundColor: AppColors.scaffoldBackground,
+
+    iconTheme: IconThemeData(
+      color: AppColors.activeIcon,
+    ),
+
+    // text theme
     textTheme: GoogleFonts.vazirmatnTextTheme().copyWith(
+
       // headlines
-      headlineLarge: TextStyle(
-        fontSize: 36,
-        fontWeight: .bold,
-        color: AppColors.primary,
-      ),
-      headlineMedium: TextStyle(
-        fontSize: 32,
-        fontWeight: .bold,
-        color: AppColors.primary,
-      ),
-      headlineSmall: TextStyle(
-        fontSize: 28,
-        fontWeight: .bold,
-        color: AppColors.primary,
-      ),
+      headlineLarge: AppTypography.headlineLarge,
+      headlineMedium: AppTypography.headlineMedium,
+      headlineSmall: AppTypography.headlineSmall,
 
 
       // body
-      bodyLarge: TextStyle(
-        fontSize: 26,
-        fontWeight: .w600,
-      ),
-      bodyMedium: TextStyle(
-        fontSize: 24,
-        fontWeight: .w500,
-      ),
-      bodySmall: TextStyle(
-        fontSize: 22,
-        fontWeight: .w400,
-      ),
+      bodyLarge: AppTypography.bodyLarge,
+      bodyMedium: AppTypography.bodyMedium,
+      bodySmall: AppTypography.bodySmall,
 
 
       // labels
-      labelLarge: TextStyle(
-        fontSize: 20,
-        fontWeight: .w600,
-      ),
-      labelMedium: TextStyle(
-        fontSize: 18,
-        fontWeight: .w500,
-      ),
-      labelSmall: TextStyle(
-        fontSize: 16,
-        fontWeight: .w400,
-      ),
+      labelLarge: AppTypography.labelLarge,
+      labelMedium: AppTypography.labelMedium,
+      labelSmall: AppTypography.labelSmall,
+    ),
 
-    )
+    // text fields
+    inputDecorationTheme: InputDecorationTheme(
+      filled: true,
+      fillColor: AppColors.textFieldFillBackground,
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(
+          width: 1,
+          color: AppColors.textFieldNormalBorder,
+        ),
+        borderRadius: BorderRadius.circular(Dimens.textFieldRadius),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide(
+          width: 1,
+          color: AppColors.textFieldFocusedBorder,
+        ),
+        borderRadius: BorderRadius.circular(Dimens.textFieldRadius),
+      ),
+    ),
 
   );
-
 }
